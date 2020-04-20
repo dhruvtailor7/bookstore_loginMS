@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient("customer")
+@FeignClient("http://bookstore-customer.herokuapp.com/")
 public interface CustomerClient {
     @PostMapping({"/add"})
     String add(@RequestBody CustomerDTO var1);
