@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient("cart")
+@FeignClient("http://bookstore-cart.herokuapp.com/")
 public interface CartClient {
     @PostMapping({"/updateGuestCart"})
     void updateGuestCart(@RequestBody CartUpdateDTO var1);
