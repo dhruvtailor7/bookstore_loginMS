@@ -14,7 +14,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableCaching
 @EnableFeignClients
-@EnableEurekaClient
 public class T3loginApplication {
 	public T3loginApplication() {
 	}
